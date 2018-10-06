@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>登录页</title>
+	<link rel="stylesheet" type="text/css" href="iconfont.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<script src="jquery-1.8.3.min.js"></script>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	.header{
+		width:1407px;
+		height:100px;
+	}
+	.head{
+		width:1190px;
+		height:100px;
+		margin:0 auto;
+	}
+	.head img{
+		width:190px;
+		height:27px;
+		margin-top:35px;
+	}
+	.cont img{
+		margin:0 auto;
+	}
+	.conten{
+		width:1407px;
+		height:600px;
+		background:#ff318c;
+	}
+	.cont{
+		width:1190px;
+		height:600px;
+		margin:0 auto;
+	}
+	.footer{
+		width:1407px;
+		height:220px;
+	}
+	.foot{
+		width:1190px;
+		height:155px;
+		margin:0 auto;
+	}
+	.foot1{
+		width:1190px;
+		height:35px;
+		margin-top:45px;
+
+	}
+	.foot1 ul li{
+		float:left;
+		list-style:none;
+		text-align:left;
+		line-height:35px;
+		margin-right:3px;
+		font-size:12px;
+	}
+	.foot2{
+		width:1190px;
+		height:35px;
+		margin-top:0px;
+	}
+	.foot2 ul li{
+		float:left;
+		list-style:none;
+		text-align:left;
+		line-height:35px;
+		margin-right:15px;
+		font-size:12px;
+	}
+	.foot3{
+		width:1190px;
+		height:35px;
+		margin:0 auto;
+	}
+	.foot3 ul li{
+		float:left;
+		list-style:none;
+		text-align:left;
+		line-height:35px;
+		margin-right:45px;
+		font-size:12px;
+		line-height:30px;
+		color:#666;
+	}
+	.foot3 ul li span{
+		color:#999;
+	}
+	.foot3 .li{
+		line-height:12px;
+	}
+	.foot .li2{
+		margin-top:10px;
+		margin-left:-250px;
+	}
+	.denglu{
+	width:350px;
+	height:405px;
+	background:#fff;
+	position:absolute;
+	top:200px;
+	left:860px;
+	}
+	.denglu1{
+		width:350px;
+		height:300px;
+		margin:20px auto;
+		position:absolute;
+		left:0;
+		bottom:10px;
+	}
+	.denglu2{
+		position:absolute;
+		width:350px;
+		height:300px;
+		bottom:0;
+	}
+	.denglu1 .denglu1-1{
+		width:300px;
+		height:18px;
+		position:relative;
+		top:20px;
+		font-weight:bold;
+		margin-top:15px;
+		line-height:18px;
+		font-size:18px;
+	}
+	.denglu1-2{
+		width:298px;
+		height:40px;
+		margin-top:50px;
+		border:1px solid #cfcfcf;
+		line-height:40px;
+	}
+	.denglu1 i{
+		display:inline-block;
+		width:40px;
+		height:40px;
+		background:#ddd;
+		text-align:center;
+		line-height:38px;
+	}
+	.denglu1 input{
+		display:inline-block;
+		width:218px;
+		height:40px;
+		border:none;
+		line-height:40px;
+		margin-top:2px;
+		position:relative;
+		top:-4px;
+	}
+	.denglu1-3{
+		margin-top:30px;
+		border:1px solid #cfcfcf;
+		width:298px;
+		height:40px;
+	}
+	.denglu1-4{
+		width:298px;
+		height:40px;
+		background:red;
+		color:#fff;
+		text-align:center;
+		line-height:40px;
+		font-weight:bold;
+		margin-top:30px;
+	}
+	.denglu2-1{
+		width:178px;
+		height:40px;
+		margin:30px auto;
+		font-size:16px;
+		font-weight:bold;
+	}
+	.denglu2-2{
+		width:298px;
+		height:140px;
+		margin:0 auto;
+		text-align:center;
+	}
+	.denglu2-3{
+		width:188px;
+		height:38px;
+		margin:20px auto;
+		position:relative;
+	}
+	.denglu2_31 i{
+		width:38px;
+		height:38px;
+		float:left;
+	}
+	.denglu2_31 p{
+		width: 144px;
+	    line-height: 18px;
+	    color: #6c6c6c;
+	    font-size: 12px;
+	    float: left;
+	    margin-left:5px;
+	}
+	.denglu2-38{
+		width:258px;
+		height:18px;
+		margin:0 auto;
+		text-align:right;
+		font-size:12px;
+		position:absolute;
+		top:70px;
+}
+	.dian{
+		position:absolute;
+		top:10px;
+		right:10px;
+	}
+	.no{
+		display:none;
+	}
+	.none{
+		display:none;
+	}
+	.block{
+		display:block;
+	}
+	.icon-dianshiji{
+	color:#f40;
+	font-size:40px;
+	clip-path: polygon(0 0%,0 0%,100% 0, 100% 100%);
+	}
+	</style>
+</head>
+<body>
+<div class="header">
+	<div class="head">
+		<img src="image/登录2.png">
+	</div>
+</div>
+<div class="conten">
+	<div class="cont">
+	<img src="image/登录1.jpg">
+	</div>
+	
+	<div class="denglu">
+
+		<div style="margin-left:30px;" class="denglu2-1">手机扫码，安全登录</div>
+		<div class="dian">
+			<a href="#"><i class="iconfont icon-dianshiji"></i></a>
+		</div>
+<!-- 登录1 -->
+		<div style="margin-left:30px;" class="denglu1">
+			<div class="denglu1-1">密码登录
+			</div>
+			<div class="denglu1-2"><i style="font-size:26px" class="iconfont icon-zhanghao"></i><input id="num" type="text" name="" value="" placeholder=" 请输入账号"><span style="width:40px;height:40px;padding-right:10px;" id="cont"></span>
+			</div>
+			<div class="denglu1-3"><span><i style="font-size:26px" class="iconfont icon-mima"></i></span><input id="num1" type="text" name="" value="" placeholder=" 请输入密码"><span style="width:40px;height:40px;padding-right:10px;" id="cont1"></span>
+			</div>
+			<div class="denglu1-4">登录</div>
+		</div>
+<!-- 登录2 -->
+		<div class="denglu2 no">
+		<div class="denglu2-2"><img src="image/二维码.png"></div>
+		<div class="denglu2-3">
+			<div class="denglu2_31"><i style="font-size:38px;color:red" class="iconfont 	icon-scan_icon"></i>
+			
+						<p>
+							<font class="ft-gray">打开</font>
+							<a style="color:red" href="#">手机天猫</a>
+							|
+							<a style="color:red" href="#">手机淘宝</a>
+						</p>
+						<p>
+							<font class="ft-gray">扫一扫登录</font>
+						</p>
+						
+			</div>
+			<div class="denglu2-38">
+				<p><a style="color:#000" href="file:///C:/Users/He/Desktop/%E5%A4%A9%E7%8C%AB/%E7%99%BB%E5%BD%95%E9%A1%B5/login.html#">密码登录</a>　　<a style="color:#000" href="file:///C:/Users/He/Desktop/%E5%A4%A9%E7%8C%AB/%E6%B3%A8%E5%86%8C%E9%A1%B5/register.html">免费注册</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<!-- 底部 -->
+<div class="footer">
+	<div class="foot">
+		<div class="foot1">
+			<ul>
+				<li>关于天猫</li>
+				<li>帮助中心</li>
+				<li>开放平台</li>
+				<li>诚聘英才</li>
+				<li>联系我们</li>
+				<li>网站合作</li>
+				<li>法律声明</li>
+				<li>隐私权政策</li>
+				<li>知识产权</li>
+				<li>廉政举报</li>
+			</ul>
+		</div>
+		<div class="foot2">
+			<ul>
+				<li>阿里巴巴集团</li>
+				<li>淘宝网</li>
+				<li>天猫</li>
+				<li>聚划算</li>
+				<li>全球速卖通</li>
+				<li>阿里巴巴国际交易市场</li>
+				<li>1688</li>
+				<li>阿里妈妈</li>
+				<li>飞猪</li>
+				<li>阿里云计算</li>
+				<li>AliOS</li>
+				<li>阿里通信</li>
+				<li>万网</li>
+				<li>高德</li>
+				<li>UC</li>
+				<li>友盟</li>
+				<li>虾米</li>
+				<li>钉钉</li>
+				<li>支付宝</li>
+			</ul>
+		</div>
+		<div class="foot3">
+			<ul>
+				<li>增值电信业务经营许可证： <span浙B2-20110446</span></li>
+				<li>网络文化经营许可证：<span>浙网文[2015]0295-065号</span></li>
+				<li><span> 12318举报</span></li>
+				<li><span> 出版物网络交易平台服务经营备案证： 新出发浙备字第001号</span></li>
+				<li>互联网违法和不良信息举报电话：<span>0571-81683755 blxxjb@alibaba-inc.com</span></li>
+				<li> 互联网药品信息服务资质证书编号：<span>浙-（经营性）-2017-0005</span></li>
+				<li><img src="image/登录3.png"> <span>浙公网安备 33010002000120号</span></li>
+				<li class="li">（浙）网械平台备字[2018]第00002号</li><br>
+				<li class="li2">&copy 2003-2018 TMALL.COM 版权所有</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+	var pattern=/^\w{4,6}$/;
+	var num=document.getElementById('num');
+	var cont=document.getElementById('cont');
+	console.log(num,cont)
+	num.onblur=function(){
+		//获取用户输入的信息
+		var v=this.value;
+		console.log(v);
+	//验证手机号码
+		if(pattern.test(v)){
+			//span标签显示对应文本内容
+			cont.innerHTML='✔';
+		}else{
+			//span标签显示对应文本内容
+			cont.innerHTML='✘';
+		}
+	};
+	var pp=/^\d{4,6}$/;
+	var num1=document.getElementById('num1');
+	var cont1=document.getElementById('cont1');
+	console.log(num1,cont1)
+	num1.onblur=function(){
+		//获取用户输入的信息
+		var w=this.value;
+		console.log(w);
+	//验证手机号码
+		if(pp.test(w)){
+			//span标签显示对应文本内容
+			cont1.innerHTML='✔';
+		}else{
+			//span标签显示对应文本内容
+			cont1.innerHTML='✘';
+		}
+	};
+	$('.denglu .dian .icon-dianshiji').click(function(){
+		$('.no').toggleClass('block');
+		$('.denglu1').toggleClass('none');
+		$('.icon-dianshiji').toggleClass('icon-mima1');
+
+	})
+</script>
+</body>
+</html>
